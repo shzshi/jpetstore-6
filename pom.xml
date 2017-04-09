@@ -65,7 +65,7 @@
 	<snapshotRepository>
 		<id>myNexusRepo</id>
 		<name>myNexusRepo</name>
-		<url>http://192.168.99.100:8081/nexus/content/repositories/myNexusRepo</url>
+		<url>http://http://192.168.99.100:8081/nexus/content/repositories/snapshots</url>
 	</snapshotRepository>
   </distributionManagement>
 
