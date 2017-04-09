@@ -58,14 +58,14 @@
 	<repository>
 		<id>my-nexus</id>
 		<name>my nexus</name>
-		<url>dav:http://192.168.99.100:8081/nexus/content/repositories/myReleaseRepo/</url>
+		<url>http://192.168.99.100:8081/nexus/content/repositories/myReleaseRepo/</url>
 	</repository>
 
 	<!-- Publish the versioned releases here -->
 	<snapshotRepository>
 		<id>my-nexus</id>
 		<name>my nexus</name>
-		<url>dav:http://192.168.99.100:8081/nexus/content/repositories/myNexusRepo/</url>
+		<url>http://192.168.99.100:8081/nexus/content/repositories/myNexusRepo/</url>
 	</snapshotRepository>
   </distributionManagement>
 
