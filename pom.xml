@@ -58,14 +58,14 @@
 	<repository>
 		<id>myNexusRepo</id>
 		<name>myNexusRepo</name>
-		<url>http://172.17.0.3:8081/nexus/content/repositories/myReleaseRepo/</url>
+		<url>http://192.168.99.100:8081/nexus/content/repositories/snapshots/</url>
 	</repository>
 
 	<!-- Publish the versioned releases here -->
 	<snapshotRepository>
 		<id>my-nexus</id>
 		<name>my nexus</name>
-		<url>http://172.17.0.3:8081/nexus/content/repositories/myNexusRepo/</url>
+		<url>http://192.168.99.100:8081/nexus/content/repositories/snapshots/</url>
 	</snapshotRepository>
   </distributionManagement>
 
@@ -217,7 +217,7 @@
 		</executions>
 		<configuration>
 			<serverId>nexus</serverId>
-			<nexusUrl>http://172.17.0.3:8081/nexus/</nexusUrl>
+			<nexusUrl>http://192.168.99.100:8081/nexus/</nexusUrl>
 			<skipStaging>true</skipStaging>
 		</configuration>
 		</plugin>
