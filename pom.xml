@@ -206,14 +206,21 @@
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
         <version>1.6.3</version>
-        <extensions>true</extensions>
-        <configuration>
-              <serverId>nexus-releases</serverId>
-          <nexusUrl>http://192.168.99.100:8081/nexus/</nexusUrl>
-          <!-- update this to the correct id! -->
-          <stagingProfileId>1296f79efe04a4d0</stagingProfileId>
-        </configuration>
-      </plugin>
+        <executions>
+			<execution>
+				<id>default-deploy</id>
+				<phase>deploy</phase>
+				<goals>
+					<goal>deploy</goal>
+				</goals>
+			</execution>
+		</executions>
+		<configuration>
+			<serverId>nexus</serverId>
+			<nexusUrl>http://192.168.99.100:8081/nexus/</nexusUrl>
+			<skipStaging>true</skipStaging>
+		</configuration>
+		</plugin>
       </plugins>
     </pluginManagement>
   </build>
