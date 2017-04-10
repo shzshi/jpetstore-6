@@ -56,16 +56,16 @@
     </site>
 	<!-- Publish the versioned releases here -->
 	<repository>
-		<id>myNexusRepo</id>
-		<name>myNexusRepo</name>
-		<url>http://192.168.99.100:8081/nexus/content/repositories/myNexusRepo</url>
+		<id>JpetstoreSnapshot</id>
+		<name>JpetstoreSnapshot</name>
+		<url>http://54.246.240.35:8081/nexus/content/repositories/JpetstoreSnapshot</url>
 	</repository>
 
 	<!-- Publish the versioned releases here -->
 	<snapshotRepository>
-		<id>myNexusRepo</id>
-		<name>myNexusRepo</name>
-		<url>http://192.168.99.100:8081/nexus/content/repositories/myNexusRepo</url>
+		<id>JpetstoreSnapshot</id>
+		<name>JpetstoreSnapshot</name>
+		<url>http://54.246.240.35:8081/nexus/content/repositories/JpetstoreSnapshot</url>
 	</snapshotRepository>
   </distributionManagement>
 
